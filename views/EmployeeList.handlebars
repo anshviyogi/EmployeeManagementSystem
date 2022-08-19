@@ -1,0 +1,25 @@
+<h1 style="text-align: center;">All Employee's</h1>
+<hr>
+<br>
+
+<table class="table table-hover">
+    <thead>
+        <tr style="text-align: center;">
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">City</th>
+        </tr>
+    </thead>
+
+    <tbody style="text-align: center;">
+        {{#each rows}}
+        <tr class="table-active">
+            <th scope="row">{{this.name}}</th>
+            <td>{{this.phone}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.city}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
